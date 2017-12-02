@@ -1,6 +1,11 @@
 const path = require('path')
 const webpack = require('webpack')
 
+const phaserModule = path.join(__dirname, '/node_modules/phaser/');
+const phaser = path.join(phaserModule, 'build/custom/phaser-split.js'),
+  pixi = path.join(phaserModule, 'build/custom/pixi.js'),
+  p2 = path.join(phaserModule, 'build/custom/p2.js');
+
 const relativePath = (str) => path.resolve(__dirname, str)
 
 module.exports = {
@@ -20,7 +25,15 @@ module.exports = {
               ['env', { targets: { browsers: ["last 2 versions"] } }]
           ]
         }
-      }
+      },
+      { test: /pixi.js/, loader: "script" }
     ]
   },
+  resolve: {
+    alias: {
+      'phaser': phaser,
+      'pixi.js': pixi,
+      'p2': p2,
+    }
+  }
 }
