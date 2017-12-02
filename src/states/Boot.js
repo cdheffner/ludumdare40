@@ -21,6 +21,8 @@ export default class extends Phaser.State {
 
     this.load.image('loaderBg', './assets/images/loader-bg.png')
     this.load.image('loaderBar', './assets/images/loader-bar.png')
+    this.load.tilemap('platformer', '../../assets/tilemaps/platform.json', null, Phaser.Tilemap.TILED_JSON)
+    this.load.image('tiles', '../../assets/tilemaps/platformer_tiles.png')
   }
 
   render () {

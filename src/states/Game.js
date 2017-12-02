@@ -16,12 +16,21 @@ export default class extends Phaser.State {
     banner.smoothed = false
     banner.anchor.setTo(0.5)
 
+    this.map = this.game.add.tilemap('platformer')
+    this.map.addTilesetImage('Platformer-Tiles', 'tiles')
+
+    this.layer = this.map.createLayer('terrain')
+    this.layer.resizeWorld()
+    this.layer.wrap = true
+
     this.mushroom = new Mushroom({
       game: this.game,
       x: this.world.centerX,
       y: this.world.centerY,
       asset: 'mushroom'
     })
+
+
 
     this.game.add.existing(this.mushroom)
   }
