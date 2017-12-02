@@ -40,7 +40,7 @@ class Level extends Phaser.State {
 	/* state-methods-begin */
 	
 	addHelloWorldText() {
-		this.add.text(100, 100, "hello world!", { fill : "#000" });
+		this.add.text(100, 100, "Hey, Developers... Bout time you fixed webpack.!", { fill : "#000" });
 	}
 
 	/* state-methods-end */
