@@ -1,6 +1,6 @@
 /* globals __DEV__ */
 import Phaser from 'phaser'
-import Mushroom from '../sprites/Mushroom'
+import Naruto from '../sprites/Naruto'
 
 export default class extends Phaser.State {
   init () {}
@@ -23,21 +23,19 @@ export default class extends Phaser.State {
     this.layer.resizeWorld()
     this.layer.wrap = true
 
-    this.mushroom = new Mushroom({
+    this.naruto = new Naruto({
       game: this.game,
       x: this.world.centerX,
       y: this.world.centerY,
-      asset: 'mushroom'
+      asset: 'naruto'
     })
 
-
-
-    this.game.add.existing(this.mushroom)
+    this.game.add.existing(this.naruto)
   }
 
   render () {
     if (__DEV__) {
-      this.game.debug.spriteInfo(this.mushroom, 32, 32)
+      this.game.debug.spriteInfo(this.naruto, 32, 32)
     }
   }
 }
