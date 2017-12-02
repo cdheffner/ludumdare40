@@ -1,5 +1,5 @@
-# JAM 40 / [INSERT NAME HERE
-]
+# JAM 40 / [INSERT NAME HERE]
+
 ## Features
 - ESLINT with JavaScript Standard Style configuration
 - Next generation of Javascript
