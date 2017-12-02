@@ -4,7 +4,7 @@ const webpack = require('webpack')
 const relativePath = (str) => path.resolve(__dirname, str)
 
 module.exports = {
-  entry: relativePath('./client/App.js'),
+  entry: relativePath('./client/js/game.js'),
   output: {
     filename: 'app.bundle.js',
     path: relativePath('./server/public/dist/js/'),
