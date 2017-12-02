@@ -7,7 +7,7 @@ export default class extends Phaser.State {
   preload () {}
 
   create () {
-    const bannerText = 'VCP BITCHES'
+    const bannerText = 'YOUR MOTHERS HOUSE'
     let banner = this.add.text(this.world.centerX, this.game.height - 80, bannerText)
     banner.font = 'Bangers'
     banner.padding.set(10, 16)
