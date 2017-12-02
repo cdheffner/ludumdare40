@@ -1,0 +1,33 @@
+{
+  "name": "ludumdare40",
+  "version": "1.0.0",
+  "description": "\"the more you have, the worse it is\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "webpack": "webpack",
+    "start": "webpack && nodemon server/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdheffner/ludumdare40.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdheffner/ludumdare40/issues"
+  },
+  "homepage": "https://github.com/cdheffner/ludumdare40#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.9.1"
+  }
+}
