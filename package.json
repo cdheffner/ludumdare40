@@ -33,6 +33,7 @@
         "webpack": "^3.4.1"
     },
     "dependencies": {
+        "babel-preset-env": "^1.6.1",
         "cordova-android": "^6.2.3",
         "cordova-browser": "^4.1.0",
         "cordova-ios": "^4.4.0",
