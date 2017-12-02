@@ -16,7 +16,9 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['env']
+          presets: [
+              ['env', { targets: { browsers: ["last 2 versions"] } }]
+          ]
         }
       }
     ]
