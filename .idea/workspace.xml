@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="876fbd6e-38b2-4c5a-a9b9-7ac070eec1be" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sprites/cat.js" afterPath="$PROJECT_DIR$/src/sprites/mushroom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sprites/Naruto.js" afterPath="$PROJECT_DIR$/src/sprites/Naruto.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Naruto.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Naruto.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sprites/Naruto.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Boot.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Boot.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/states/Boot.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
@@ -131,8 +129,8 @@
         <option value="$PROJECT_DIR$/package-lock.json" />
         <option value="$PROJECT_DIR$/src/sprites/cat.js" />
         <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/src/sprites/Naruto.js" />
         <option value="$PROJECT_DIR$/src/sprites/mushroom.js" />
+        <option value="$PROJECT_DIR$/src/sprites/Naruto.js" />
       </list>
     </option>
   </component>
@@ -212,6 +210,12 @@
               <item name="ludumdare40" type="b2602c69:ProjectViewProjectNode" />
               <item name="ludumdare40" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sprites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ludumdare40" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ludumdare40" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="states" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -260,12 +264,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512254593801</updated>
-      <workItem from="1512254596405" duration="5606000" />
+      <workItem from="1512254596405" duration="5731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5606000" />
+    <option name="totallyTimeSpent" value="5731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="939" extended-state="6" />
@@ -404,14 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sprites/Naruto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sprites/mushroom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -427,6 +423,14 @@
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sprites/Naruto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

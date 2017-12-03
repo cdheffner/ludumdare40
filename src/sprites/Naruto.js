@@ -10,25 +10,11 @@ export default class extends Phaser.Sprite {
   
   
   update () {
-    var sprite1 = this.animations.sprite
 
-    if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
-    {
-        sprite1.x -= 4;
-    }
-    else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT))
-    {
-        sprite1.x += 4;
-    }
-
-    if (game.input.keyboard.isDown(Phaser.Keyboard.UP))
-    {
-        sprite1.y -= 4;
-    }
-    else if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
-    {
-        sprite1.y += 4;
-    }
-
+    (game.input.keyboard.isDown(Phaser.Keyboard.LEFT)) ? this.x -= 4
+    : (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT)) ? this.x += 4
+    : (game.input.keyboard.isDown(Phaser.Keyboard.UP)) ? this.y -= 4
+    : (game.input.keyboard.isDown(Phaser.Keyboard.DOWN)) ? this.y += 4
+    : null
   }
 }
