@@ -11,7 +11,7 @@ export default class extends Phaser.Sprite {
   
   update () {
     var sprite1 = this.animations.sprite
-    
+
     if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
     {
         sprite1.x -= 4;
@@ -29,5 +29,6 @@ export default class extends Phaser.Sprite {
     {
         sprite1.y += 4;
     }
+
   }
 }

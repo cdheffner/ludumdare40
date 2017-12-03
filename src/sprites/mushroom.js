@@ -7,6 +7,10 @@ export default class extends Phaser.Sprite {
     }
 
     update () {
-        this.angle += 1
+        var sprite = this.animations.sprite
+        game.physics.startSystem(Phaser.Physics.ARCADE);
+
+        sprite.body.setSize(100, 50, 50, 25);
+        sprite.body.immovable = true;
     }
 }
