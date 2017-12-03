@@ -17,20 +17,11 @@ export default class extends Phaser.State {
     banner.anchor.setTo(0.5)
 
     this.map = this.game.add.tilemap('platformer')
-    this.map.addTilesetImage('Platformer-Tiles', 'tiles')
+    this.map.addTilesetImage('platformer_tiles', 'tiles')
 
     this.layer = this.map.createLayer('terrain')
     this.layer.resizeWorld()
     this.layer.wrap = true
-
-    this.naruto = new Naruto({
-      game: this.game,
-      x: this.world.centerX,
-      y: this.world.centerY,
-      asset: 'naruto'
-    })
-
-    this.game.add.existing(this.naruto)
   }
 
   render () {

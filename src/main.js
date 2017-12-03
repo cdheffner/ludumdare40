@@ -8,19 +8,31 @@ import GameState from './states/Game'
 
 import config from './config'
 
-var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
 
-    game.load.image('cat', 'assets/images/cat.png');
-    game.load.atlasJSONHash('mushroom', 'assets/images/mushroom2.png');
+    game.load.tilemap('platformer', '../assets/tilemaps/platform.json', null, Phaser.Tilemap.TILED_JSON)
+    game.load.image('tiles', '../assets/tilemaps/platformer_tiles.png')
 
 }
 
+var map
+var layer
 var sprite1;
 var sprite2;
 
 function create() {
+  game.stage.backgroundColor = '#2d2d2d';
+
+  map = game.add.tilemap('platformer')
+  map.addTilesetImage('platformer_tiles', 'tiles')
+
+  layer = map.createLayer('Tile Layer 1')
+
+  layer.resizeWorld()
+
+  layer.wrap = true
 
     sprite2 = game.add.sprite(game.world.centerX, game.world.centerY, 'mushroom');
     sprite2.anchor.setTo(0.5, 0.5);
@@ -31,7 +43,6 @@ function create() {
 
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
-    game.stage.backgroundColor = '#2d2d2d';
 
     sprite1 = game.add.sprite(150, 200, 'atari');
     sprite1.name = 'cat';
@@ -80,10 +91,5 @@ function collisionHandler (obj1, obj2) {
 }
 
 function render() {
-    game.debug.spriteInfo(sprite2, 20, 32);
-    game.debug.bodyInfo(sprite1, 32, 32);
-
-    game.debug.body(sprite1);
-    game.debug.body(sprite2);
 
 }
