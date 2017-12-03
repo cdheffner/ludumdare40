@@ -10,22 +10,10 @@ export default class extends Phaser.Sprite {
   
   
   update () {
-    if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT))
-    {
-        this.x -= 4;
-    }
-    else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT))
-    {
-        this.x += 4;
-    }
-
-    if (game.input.keyboard.isDown(Phaser.Keyboard.UP))
-    {
-        this.y -= 4;
-    }
-    else if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN))
-    {
-        this.y += 4;
-    }
+    (game.input.keyboard.isDown(Phaser.Keyboard.LEFT)) ? this.x -= 4
+    : (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT)) ? this.x += 4
+    : (game.input.keyboard.isDown(Phaser.Keyboard.UP)) ? this.y -= 4
+    : (game.input.keyboard.isDown(Phaser.Keyboard.DOWN)) ? this.y += 4
+    : null
   }
 }
